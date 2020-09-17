@@ -23,9 +23,12 @@ for (var i = 0; i < drumSelector.length; i++) {
 //each case creates a new Audio object and then uses the "play()" method to play the sound from the selected url
 function playSound(key) {
 
+
+
   switch (key) {
     case "f":
       var tom1 = new Audio("sounds/tom-1.mp3");
+      tom1.currentTime = 0;
       tom1.play();
       break;
 
@@ -35,6 +38,7 @@ function playSound(key) {
     case "l":
     case ";":
       var snare = new Audio("sounds/snare.mp3");
+      snare.currentTime = 0;
       snare.play();
       break;
 
@@ -48,23 +52,27 @@ function playSound(key) {
     case ".":
     case "/":
       var bass = new Audio("sounds/kick-bass.mp3");
+      bass.currentTime = 0;
       bass.play();
       break;
 
     case "j":
       var tom2 = new Audio("sounds/tom-2.mp3");
+      tom2.currentTime = 0 ';
       tom2.play();
       break;
 
     case "n":
     case "a":
       var tom3 = new Audio("sounds/tom-3.mp3");
+      tom3.currentTime = 0;
       tom3.play();
       break;
 
     case "m":
     case "s":
       var tom4 = new Audio("sounds/tom-4.mp3");
+      tom4.currentTime = 0;
       tom4.play();
       break;
 
