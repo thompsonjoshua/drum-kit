@@ -58,7 +58,7 @@ function playSound(key) {
 
     case "j":
       var tom2 = new Audio("sounds/tom-2.mp3");
-      tom2.currentTime = 0 ';
+      tom2.currentTime = 0;
       tom2.play();
       break;
 
